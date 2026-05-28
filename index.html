@@ -567,6 +567,44 @@
         font-size: 25px;
       }
     }
+  
+    /* Final mobile/tablet override: make hero cards full-width */
+    @media (max-width: 900px) {
+      .page {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .hero {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .hero-card,
+      .summary-card,
+      .panel,
+      .metric-card {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .page {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .hero-card,
+      .summary-card {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
   </style>
 </head>
 <body>
