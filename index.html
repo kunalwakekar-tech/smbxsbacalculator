@@ -605,6 +605,56 @@
         margin-right: 0;
       }
     }
+  
+    /* HARD MOBILE FIX: top cards must fill phone width */
+    @media screen and (max-width: 900px) {
+      html,
+      body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+      }
+
+      .page {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+      }
+
+      .hero {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 16px !important;
+      }
+
+      .hero-card,
+      .summary-card {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 0 16px 0 !important;
+      }
+
+      .grid,
+      .panel,
+      .results-grid,
+      .metric-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      .page {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+    }
   </style>
 </head>
 <body>
